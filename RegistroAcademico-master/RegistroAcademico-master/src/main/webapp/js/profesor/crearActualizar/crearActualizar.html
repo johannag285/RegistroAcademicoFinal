@@ -1,0 +1,21 @@
+<div>
+    <div class="form-group">
+        <label class="control-label">Codigo Profesor</label>
+        <input class="form-control" ng-model="profesor.cod_profesor" id="nombre" type="text" placeholder="nombre"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Id Persona</label>
+        <input class="form-control" ng-model="profesor.PERSONA_id_fk" id="marca" type="text" placeholder="id persona"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Id programa</label>
+        <input class="form-control" ng-model="profesor.PROGRAMA_id_fk" id="precio" type="text" placeholder="id programa"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Área de profundización</label>
+        <input class="form-control" ng-model="profesor.area_profundizacion" id="stock" type="text" placeholder="area"/>
+    </div>
+    
+    <button class="btn btn-danger" ng-if="!profesor.id" id="crearBoton" ng-click="crearProfesor()">Crear Profesor</button>
+    <button class="btn btn-primary" ng-if="profesor.id" id="crearBoton" ng-click="actualizarProfesor()">Actualizar Profesor</button>
+</div>

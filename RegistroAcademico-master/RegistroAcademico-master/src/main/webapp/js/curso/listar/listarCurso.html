@@ -1,0 +1,20 @@
+<div id="tableCurso">
+    <table class="table table-striped">
+        <thead>
+            <th>Nombre curso</th>
+            <th>Programa del curso</th>
+           
+        </thead>
+        <tbody>
+            <tr ng-repeat="curso in cursos">
+                <td>{{curso.nombre}}</td>
+                <td>{{curso.PROGRAMA_id.nom_programa}}</td>
+                
+                <td>
+                    <button class="btn btn-danger" ng-click="eliminarCurso(curso.id)">Eliminar</button>
+                    <button class="btn btn-success" ui-sref="editarCurso({id:curso.id})">Actualizar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

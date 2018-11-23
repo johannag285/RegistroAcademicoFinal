@@ -1,0 +1,31 @@
+<div>
+    <div class="form-group">
+        <label class="control-label">Nombre</label>
+        <input class="form-control" ng-model="persona.nom_persona" id="nombrePersona" type="text" placeholder="nombre"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Apellido</label>
+        <input class="form-control" ng-model="persona.apelllido_persona" id="apellidoPersona" type="text" placeholder="apellido"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Tipo documento</label>
+        <input class="form-control" ng-model="persona.tipo_documento" id="telefonoPersona" type="text" placeholder="Tipo Doc"/>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Número documento</label>
+        <input class="form-control" ng-model="persona.num_documento" id="contrasenaPersona" type="text" placeholder="Numero Doc"/>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label">Género</label>
+        <input class="form-control" ng-model="persona.genero" id="id_persona_superior" type="text" placeholder="Genero"/>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label">Email</label>
+        <input class="form-control" ng-model="persona.email" id="cod_rol" type="text" placeholder="Email"/>
+    </div>
+    
+    <button class="btn btn-danger" ng-if="!persona.id" id="crearBoton" ng-click="crearPersona()">Crear Persona</button>
+    <button class="btn btn-primary" ng-if="persona.id" id="crearBoton" ng-click="actualizarPersona()">Actualizar Persona</button>
+</div>

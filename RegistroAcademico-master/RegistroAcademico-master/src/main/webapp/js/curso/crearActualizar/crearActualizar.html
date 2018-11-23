@@ -1,0 +1,16 @@
+<div>
+    <div class="form-group">
+        <label class="control-label">Nombre Curso</label>
+        <input class="form-control" ng-model="curso.nom_curso" id="nombre" type="text" placeholder="nombre"/>  
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Programa del Curso</label>
+        <input class="form-control" ng-model="curso.PROGRAMA_id_fk" id="PROGRAMA_id_fk" type="text" placeholder="programa_id"/>  
+    </div>
+    
+    
+    <button class="btn btn-danger" ng-if="!curso.id" id="crearBoton" ng-click="crearCurso()">Crear Curso</button>
+    <button class="btn btn-primary" ng-if="curso.id" id="crearBoton" ng-click="actualizarCurso()">Actualizar Curso</button>
+</div>
+

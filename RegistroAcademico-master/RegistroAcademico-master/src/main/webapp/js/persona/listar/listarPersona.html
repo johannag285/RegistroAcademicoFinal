@@ -1,0 +1,26 @@
+<div id="tablePersona">
+    <table class="table table-striped">
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo Documento</th>
+            <th>Número Documento</th>
+            <th>Género</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="persona in personas">
+                <td>{{persona.nom_persona}}</td>
+                <td>{{persona.apelllido_persona}}</td>
+                <td>{{persona.tipo_documento}}</td>
+                <td>{{persona.num_documento}}</td>
+                <td>{{persona.genero}}</td>
+                <td>{{persona.email}}</td>
+                <td>
+                    <button class="btn btn-danger" ng-click="eliminarPersona(persona.id)">Eliminar</button>
+                    <button class="btn btn-success" ui-sref="editarPersona({id:persona.id})">Actualizar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

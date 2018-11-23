@@ -1,0 +1,23 @@
+<div id="tableProfesor">
+    <table class="table table-striped">
+        <thead>
+            <th>Codigo</th>
+            <th>Id persona</th>
+            <th>Id programa</th>
+            <th>Área de profundización</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="profesor in profesores">
+                <td>{{profesor.cod_profesor}}</td>
+                <td>{{profesor.PERSONA_id_fk}}</td>
+                <td>{{profesor.PROGRAMA_id_fk}}</td>
+                <td>{{profesor.area_profundizacion}}</td>
+                
+                <td>
+                    <button class="btn btn-danger" ng-click="eliminarProfesor(profesor.id)">Eliminar</button>
+                    <button class="btn btn-success" ui-sref="editarProfesor({id:profesor.id})">Actualizar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
